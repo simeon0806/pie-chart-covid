@@ -1,0 +1,102 @@
+body {
+    background-color: gainsboro;
+}
+
+h1 {
+    font-size: sans-serif;
+    text-align: center;
+    color: rgba(255, 38, 0, 0.7);
+    margin-top: 50px;
+    font-size: 3em;
+}
+
+.piechart {
+    margin: 60px auto;
+    width: 400px;
+    height: 400px;
+    position: relative;
+}
+
+.common {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.base {
+    background: black url('images/covid-19.jpg') no-repeat -100px 0;
+    background-size: cover;
+}
+
+.border {
+    border: 2px solid gray;
+    top: -6px;
+    left: -6px;
+    width: 408px;
+    height: 408px;
+}
+
+.slice {
+    clip: rect(0px, 200px, 400px, 0px);
+}
+
+.slice_active_1 {
+    transform: rotate(110deg);
+}
+
+.slice_active_2 {
+    background-color: rgba(172, 47, 68, 0.6);
+    transform: rotate(80deg);
+}
+
+.slice_deaths_2 {
+    background-color: rgba(255, 0, 0, 0.6);
+    transform: rotate(145deg);
+}
+
+.slice_deaths_1 {
+    transform: rotate(145deg);
+}
+
+.slice_recovered_2 {
+    background-color: rgba(245, 245, 245, 0.4);
+}
+
+.slice_recovered_1 {
+    transform: rotate(325deg);
+}
+
+.slice_recovered_2_2 {
+    background-color: rgba(245, 245, 245, 0.4);
+    transform: rotate(135deg);
+}
+
+.slice_recovered_1_2 {
+    transform: rotate(10deg);
+}
+
+p.lable {
+    position: absolute;
+    color: rgb(165, 114, 105);
+    border-bottom: 2px solid rgb(71, 70, 70);
+    font-size: 1.6em;
+}
+
+.lable_active {
+    top: 40px;
+    left: 350px;
+    padding-left: 80px;
+}
+
+.lable_deaths {
+    top: 200px;
+    left: 350px;
+    padding-left: 80px;
+}
+
+.lable_recovered {
+    top: 110px;
+    left: -150px;
+    padding-right: 80px;
+}
